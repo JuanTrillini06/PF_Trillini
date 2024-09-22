@@ -1,0 +1,43 @@
+/*Estilo de la pagina "Historia"*/
+.nosotros img{
+    height: 25rem;
+    border: gray double 2px;
+    border-radius: 10px;
+}
+.nosotros{
+    background-color: #f1ebeb;
+    display:flex;
+    justify-content: right;
+    text-align: left;
+    flex-direction: row;
+    gap: 1rem;
+    text-wrap: wrap;
+}
+.comienzo img{
+    height: 25rem;
+    border: gray double 2px;
+    border-radius: 10px;
+}
+.comienzo{
+    background-color: #f1ebeb;
+    display:flex;
+    justify-content: right;
+    text-align: right;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    text-wrap: wrap;
+}
+.futuro img{
+    height: 25rem;
+    border: gray double 2px;
+    border-radius: 10px;
+}
+.futuro{
+    background-color: #f1ebeb;
+    display:flex;
+    justify-content: right;
+    text-align: left;
+    flex-direction: row;
+    gap: 1rem;
+    text-wrap: wrap;
+}
