@@ -88,6 +88,148 @@ h1 {
 footer {
   background-color: #1c2c2f;
   border: black solid 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-template-areas: "contacto . ." "telefono . iconos" "email . iconos" "direccion . .";
+}
+
+.iconos {
+  grid-area: iconos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contacto {
+  grid-area: contacto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.telefono {
+  grid-area: telefono;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.email {
+  grid-area: email;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.direccion {
+  grid-area: direccion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.iconos {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista {
+  list-style: none;
+  display: inline-block;
+  font-size: 23px;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.instagram {
+  border: 2px solid #ff0095;
+  color: #c72b7e;
+}
+
+.twitter {
+  border: 2px solid #1c9ff1;
+  color: #1c9ff1;
+}
+
+.youtube {
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.facebook {
+  border: 2px solid #0679e6;
+  color: #0679e6;
+}
+
+.icon {
+  transition: 0.6s;
+}
+
+.lista:hover .icon1 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #ff0095;
+}
+
+.lista:hover .icon2 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #1c9ff1;
+}
+
+.lista:hover .icon3 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #ff0000;
+}
+
+.lista:hover .icon4 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #0679e6;
+}
+
+.lista {
+  transition: 0.4s;
+  transition-delay: 0.2s;
+}
+
+.instagram:hover {
+  box-shadow: 0px 0px 7px #ff0095 inset, 0px 0px 7px #ff0095;
+}
+
+.twitter:hover {
+  box-shadow: 0px 0px 7px #1c9ff1 inset, 0px 0px 7px #1c9ff1;
+}
+
+.youtube:hover {
+  box-shadow: 0px 0px 7px #ff0000 inset, 0px 0px 7px #ff0000;
+}
+
+.facebook:hover {
+  box-shadow: 0px 0px 7px #0679e6 inset, 0px 0px 7px #0679e6;
+}
+
+.contacto a {
+  text-decoration: none;
+  padding: 10px;
+  color: #1c2c2f;
+  background-color: #8e5f55;
+  border-radius: 20px;
+}
+
+.contacto a:hover {
+  background-color: #d8dbd4;
 }
 
 /*Estilo del index*/
