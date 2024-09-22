@@ -9,10 +9,15 @@ body {
   height: 100vh;
 }
 
+main {
+  background-color: #8e5f55;
+}
+
 /*Estilo para el header*/
 header {
-  background-color: #bfadad;
+  background-color: #1c2c2f;
   border: black solid 1px;
+  color: #d8dbd4;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,7 +46,6 @@ h1 {
 }
 
 .nosotros {
-  background-color: #f1ebeb;
   display: flex;
   justify-content: right;
   text-align: left;
@@ -57,7 +61,6 @@ h1 {
 }
 
 .comienzo {
-  background-color: #f1ebeb;
   display: flex;
   justify-content: right;
   text-align: right;
@@ -73,7 +76,6 @@ h1 {
 }
 
 .futuro {
-  background-color: #f1ebeb;
   display: flex;
   justify-content: right;
   text-align: left;
@@ -84,7 +86,7 @@ h1 {
 
 /*Estilo del footer*/
 footer {
-  background-color: #bfadad;
+  background-color: #1c2c2f;
   border: black solid 1px;
 }
 

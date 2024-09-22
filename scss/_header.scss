@@ -1,7 +1,8 @@
 /*Estilo para el header*/
 header{
-    background-color: #bfadad;
+    background-color: $mirage;
     border: black solid 1px;
+    color: $celeste;
     display: flex;
     justify-content: space-around;
     align-items: center;
