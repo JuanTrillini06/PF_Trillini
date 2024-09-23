@@ -17,15 +17,10 @@ main {
 header {
   background-color: #1c2c2f;
   border: black solid 1px;
-  color: #d8dbd4;
+  color: #1c2c2f;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-header h1 {
-  background-color: #f1ebeb;
-  border-radius: 1rem;
 }
 
 .logoSize {
@@ -36,6 +31,11 @@ header h1 {
 h1 {
   font-size: x-small;
   color: #bfadad;
+}
+
+nav {
+  background-color: #d8dbd4;
+  border-radius: 20px;
 }
 
 /*Estilo de la pagina "Historia"*/
@@ -94,16 +94,7 @@ footer {
   gap: 2px 2px;
   grid-template-areas: "contacto . ." "telefono . iconos" "email . iconos" "direccion . .";
 }
-
-.iconos {
-  grid-area: iconos;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.contacto {
+footer .contacto {
   grid-area: contacto;
   margin-top: 5px;
   display: flex;
@@ -111,38 +102,46 @@ footer {
   align-items: center;
   text-align: center;
 }
-
-.telefono {
+footer .contacto a {
+  text-decoration: none;
+  padding: 10px;
+  color: #1c2c2f;
+  background-color: #d8dbd4;
+  border-radius: 20px;
+}
+footer .contacto a:hover {
+  color: black;
+}
+footer .telefono {
   grid-area: telefono;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.email {
+footer .email {
   grid-area: email;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.direccion {
+footer .direccion {
   grid-area: direccion;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.iconos {
-  width: 300px;
+footer .iconos {
+  grid-area: iconos;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 300px;
 }
-
-.lista {
+footer .iconos .lista {
   list-style: none;
   display: inline-block;
   font-size: 23px;
@@ -154,82 +153,56 @@ footer {
   align-items: center;
   cursor: pointer;
 }
-
-.instagram {
-  border: 2px solid #ff0095;
-  color: #c72b7e;
-}
-
-.twitter {
-  border: 2px solid #1c9ff1;
-  color: #1c9ff1;
-}
-
-.youtube {
-  border: 2px solid #ff0000;
-  color: #ff0000;
-}
-
-.facebook {
-  border: 2px solid #0679e6;
-  color: #0679e6;
-}
-
-.icon {
+footer .iconos .icon {
   transition: 0.6s;
 }
-
-.lista:hover .icon1 {
-  transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #ff0095;
-}
-
-.lista:hover .icon2 {
-  transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #1c9ff1;
-}
-
-.lista:hover .icon3 {
-  transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #ff0000;
-}
-
-.lista:hover .icon4 {
-  transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #0679e6;
-}
-
-.lista {
+footer .iconos .lista {
   transition: 0.4s;
   transition-delay: 0.2s;
 }
-
-.instagram:hover {
+footer .iconos .instagram {
+  border: 2px solid #ff0095;
+  color: #c72b7e;
+}
+footer .iconos .lista:hover .icon1 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #ff0095;
+}
+footer .iconos .twitter {
+  border: 2px solid #1c9ff1;
+  color: #1c9ff1;
+}
+footer .iconos .lista:hover .icon2 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #1c9ff1;
+}
+footer .iconos .youtube {
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+footer .iconos .lista:hover .icon3 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #ff0000;
+}
+footer .iconos .facebook {
+  border: 2px solid #0679e6;
+  color: #0679e6;
+}
+footer .iconos .lista:hover .icon4 {
+  transform: rotateY(360deg);
+  text-shadow: 0px 0px 1px #0679e6;
+}
+footer .iconos .instagram:hover {
   box-shadow: 0px 0px 7px #ff0095 inset, 0px 0px 7px #ff0095;
 }
-
-.twitter:hover {
+footer .iconos .twitter:hover {
   box-shadow: 0px 0px 7px #1c9ff1 inset, 0px 0px 7px #1c9ff1;
 }
-
-.youtube:hover {
+footer .iconos .youtube:hover {
   box-shadow: 0px 0px 7px #ff0000 inset, 0px 0px 7px #ff0000;
 }
-
-.facebook:hover {
+footer .iconos .facebook:hover {
   box-shadow: 0px 0px 7px #0679e6 inset, 0px 0px 7px #0679e6;
-}
-
-.contacto a {
-  text-decoration: none;
-  padding: 10px;
-  color: #1c2c2f;
-  background-color: #8e5f55;
-  border-radius: 20px;
-}
-
-.contacto a:hover {
-  background-color: #d8dbd4;
 }
 
 /*Estilo del index*/

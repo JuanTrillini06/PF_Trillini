@@ -2,14 +2,10 @@
 header{
     background-color: $mirage;
     border: black solid 1px;
-    color: $celeste;
+    color: $mirage;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-header h1{
-    background-color: #f1ebeb;
-    border-radius: 1rem;
 }
 .logoSize{
     width: 5rem;
@@ -18,4 +14,8 @@ header h1{
 h1{
     font-size: x-small;
     color: #bfadad;
+}
+nav{
+    background-color: $celeste;
+    border-radius: 20px;
 }
