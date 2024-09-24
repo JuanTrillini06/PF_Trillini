@@ -1,5 +1,6 @@
 /*Estilo para el header*/
 header{
+    padding: 10px;
     background-color: $mirage;
     border: black solid 1px;
     color: $mirage;
@@ -8,7 +9,7 @@ header{
     align-items: center;
 }
 .logoSize{
-    width: 5rem;
+    width: 6rem;
     height: auto;
 }
 h1{
@@ -17,5 +18,5 @@ h1{
 }
 nav{
     background-color: $celeste;
-    border-radius: 20px;
+    border-radius: 50% 5% 50% 5%;
 }

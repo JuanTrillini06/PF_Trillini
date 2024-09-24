@@ -1,40 +1,57 @@
 /*Estilo de la pagina "Historia"*/
-.nosotros img{
-    height: 25rem;
-    border: gray double 2px;
-    border-radius: 10px;
+.historia {
+    padding:10px;
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    grid-template-rows: 0.25fr 1.75fr 0.25fr 1.75fr 0.25fr 1.75fr; 
+    gap: 0px 5px; 
+    grid-template-areas: 
+      "comienzo-img comienzo-h3 comienzo-h3"
+      "comienzo-img comienzo-p comienzo-p"
+      "nosotros-h3 nosotros-h3 nosotros-img"
+      "nosotros-p nosotros-p nosotros-img"
+      "futuro-img futuro-h3 futuro-h3"
+      "futuro-img futuro-p futuro-p"; 
+  }
+  .comienzo-img { 
+    grid-area: comienzo-img;
+    width: 400px;
 }
-.nosotros{
-    display:flex;
-    justify-content: right;
-    text-align: left;
-    flex-direction: row;
-    gap: 1rem;
-    text-wrap: wrap;
+  .comienzo-h3 {
+    grid-area: comienzo-h3;
 }
-.comienzo img{
-    height: 25rem;
-    border: gray double 2px;
-    border-radius: 10px;
+  .comienzo-p {
+    grid-area: comienzo-p;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
 }
-.comienzo{
-    display:flex;
-    justify-content: right;
-    text-align: right;
-    flex-direction: row-reverse;
-    gap: 1rem;
-    text-wrap: wrap;
+  .nosotros-img {
+    grid-area: nosotros-img;
+    width: 400px;
 }
-.futuro img{
-    height: 25rem;
-    border: gray double 2px;
-    border-radius: 10px;
+  .nosotros-h3 {
+    grid-area: nosotros-h3;
+    display: flex;
+    justify-content: flex-end;
 }
-.futuro{
-    display:flex;
-    justify-content: right;
-    text-align: left;
-    flex-direction: row;
-    gap: 1rem;
-    text-wrap: wrap;
+  .nosotros-p {
+    grid-area: nosotros-p;
+    text-align: justify;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+  .futuro-img { 
+    grid-area: futuro-img;
+    width: 400px;
+}
+  .futuro-h3 {
+    grid-area: futuro-h3;
+}
+  .futuro-p {
+    grid-area: futuro-p;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
 }
