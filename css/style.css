@@ -38,6 +38,17 @@ nav {
   border-radius: 20px;
 }
 
+/*Estilo del index*/
+.fondo {
+  background-color: #bfadad;
+  opacity: 0.4;
+  border-radius: 10%;
+}
+
+.fondo:hover {
+  opacity: 0.7;
+}
+
 /*Estilo de la pagina "Historia"*/
 .nosotros img {
   height: 25rem;
@@ -84,15 +95,101 @@ nav {
   text-wrap: wrap;
 }
 
-/*Estilo del index*/
-.fondo {
-  background-color: #bfadad;
-  opacity: 0.4;
-  border-radius: 10%;
+.form-moto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-flow: column;
 }
 
-.fondo:hover {
-  opacity: 0.7;
+.form-group {
+  position: relative;
+  margin: 12px 0;
+  padding: 10px;
+}
+
+.form-comentario {
+  position: relative;
+  margin: 12px 0;
+  padding: 10px;
+}
+
+.form-group input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: black solid 2px;
+  background-color: transparent;
+  color: #1c2c2f;
+  transition: 0.15s all ease;
+}
+
+.form-comentario textarea {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: black solid 2px;
+  background-color: transparent;
+  color: #1c2c2f;
+  transition: 0.15s all ease;
+}
+
+.form-group input:focus {
+  border-color: #1c2c2f;
+}
+
+.form-comentario textarea:focus {
+  border-color: #1c2c2f;
+}
+
+.form-group input::placeholder {
+  color: transparent;
+}
+
+.form-comentario textarea::placeholder {
+  color: transparent;
+}
+
+.form-group .form-label {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  font-size: 18px;
+  padding: 0 20px;
+  color: #1c2c2f;
+  pointer-events: none;
+  transition: 0.15s all ease;
+}
+
+.form-comentario .form-label {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  font-size: 18px;
+  padding: 0 20px;
+  color: #1c2c2f;
+  pointer-events: none;
+  transition: 0.15s all ease;
+}
+
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + .form-label {
+  transform: translate(5px, -22px);
+  background-color: #8e5f55;
+  font-size: 14px;
+  color: #1c2c2f;
+  border-radius: 100%;
+}
+
+.form-comentario textarea:focus + .form-label,
+.form-comentario textarea:not(:placeholder-shown) + .form-label {
+  transform: translate(5px, -22px);
+  background-color: #8e5f55;
+  font-size: 14px;
+  color: #1c2c2f;
+  border-radius: 100%;
 }
 
 .form-contact {
@@ -107,9 +204,26 @@ nav {
 .form-group {
   position: relative;
   margin: 12px 0;
+  padding: 10px;
+}
+
+.form-comentario {
+  position: relative;
+  margin: 12px 0;
+  padding: 10px;
 }
 
 .form-group input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: black solid 2px;
+  background-color: transparent;
+  color: #1c2c2f;
+  transition: 0.15s all ease;
+}
+
+.form-comentario textarea {
   padding: 8px 10px;
   font-size: 18px;
   border-radius: 5px;
@@ -123,16 +237,35 @@ nav {
   border-color: #1c2c2f;
 }
 
+.form-comentario textarea:focus {
+  border-color: #1c2c2f;
+}
+
 .form-group input::placeholder {
+  color: transparent;
+}
+
+.form-comentario textarea::placeholder {
   color: transparent;
 }
 
 .form-group .form-label {
   position: absolute;
-  top: 9px;
+  top: 19px;
   left: 0;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 0 20px;
+  color: #1c2c2f;
+  pointer-events: none;
+  transition: 0.15s all ease;
+}
+
+.form-comentario .form-label {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  font-size: 18px;
+  padding: 0 20px;
   color: #1c2c2f;
   pointer-events: none;
   transition: 0.15s all ease;
@@ -141,9 +274,19 @@ nav {
 .form-group input:focus + .form-label,
 .form-group input:not(:placeholder-shown) + .form-label {
   transform: translate(5px, -22px);
-  background-color: black;
+  background-color: #8e5f55;
   font-size: 14px;
   color: #1c2c2f;
+  border-radius: 100%;
+}
+
+.form-comentario textarea:focus + .form-label,
+.form-comentario textarea:not(:placeholder-shown) + .form-label {
+  transform: translate(5px, -22px);
+  background-color: #8e5f55;
+  font-size: 14px;
+  color: #1c2c2f;
+  border-radius: 100%;
 }
 
 /*Estilo del footer*/
