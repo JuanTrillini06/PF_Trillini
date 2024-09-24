@@ -54,15 +54,22 @@ nav {
 .historia {
   padding: 10px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 0.25fr 1.75fr 0.25fr 1.75fr 0.25fr 1.75fr;
   gap: 0px 5px;
   grid-template-areas: "comienzo-img comienzo-h3 comienzo-h3" "comienzo-img comienzo-p comienzo-p" "nosotros-h3 nosotros-h3 nosotros-img" "nosotros-p nosotros-p nosotros-img" "futuro-img futuro-h3 futuro-h3" "futuro-img futuro-p futuro-p";
 }
 
+@media (max-width: 480px) {
+  .historia {
+    grid-template-columns: auto;
+    grid-template-rows: auto 0.25fr 1.75fr auto 0.25fr 1.75fr auto 0.25fr 1.75fr;
+    grid-template-areas: "comienzo-img" "comienzo-h3" "comienzo-p" "nosotros-img" "nosotros-h3" "nosotros-p" "futuro-img" "futuro-h3" "futuro-p";
+  }
+}
 .comienzo-img {
   grid-area: comienzo-img;
-  width: 400px;
+  width: 100%;
 }
 
 .comienzo-h3 {
@@ -78,7 +85,7 @@ nav {
 
 .nosotros-img {
   grid-area: nosotros-img;
-  width: 400px;
+  width: 100%;
 }
 
 .nosotros-h3 {
@@ -97,7 +104,7 @@ nav {
 
 .futuro-img {
   grid-area: futuro-img;
-  width: 400px;
+  width: 100%;
 }
 
 .futuro-h3 {
