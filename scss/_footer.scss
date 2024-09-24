@@ -4,7 +4,7 @@ footer{
     border: black solid 1px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr; 
     gap: 2px 2px; 
     grid-template-areas: 
       "contacto . ."

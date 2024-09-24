@@ -70,10 +70,21 @@ nav {
 .comienzo-img {
   grid-area: comienzo-img;
   width: 100%;
+  border-radius: 50% 5% 50% 5%;
+  opacity: 0.7;
+  border: #1c2c2f solid 1px;
+}
+
+.comienzo-img:hover {
+  border-radius: 0%;
+  transition: 1s all ease-in;
+  opacity: 1;
+  border: #d8dbd4 solid 1px;
 }
 
 .comienzo-h3 {
   grid-area: comienzo-h3;
+  color: #d8dbd4;
 }
 
 .comienzo-p {
@@ -81,17 +92,29 @@ nav {
   text-align: justify;
   display: flex;
   flex-wrap: wrap;
+  color: #d8dbd4;
 }
 
 .nosotros-img {
   grid-area: nosotros-img;
   width: 100%;
+  border-radius: 50% 5% 50% 5%;
+  opacity: 0.7;
+  border: #1c2c2f solid 1px;
+}
+
+.nosotros-img:hover {
+  border-radius: 0%;
+  transition: 1s all ease-in;
+  opacity: 1;
+  border: #d8dbd4 solid 1px;
 }
 
 .nosotros-h3 {
   grid-area: nosotros-h3;
   display: flex;
   justify-content: flex-end;
+  color: #d8dbd4;
 }
 
 .nosotros-p {
@@ -100,15 +123,27 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  color: #d8dbd4;
 }
 
 .futuro-img {
   grid-area: futuro-img;
   width: 100%;
+  border-radius: 50% 5% 50% 5%;
+  opacity: 0.7;
+  border: #1c2c2f solid 1px;
+}
+
+.futuro-img:hover {
+  border-radius: 0%;
+  transition: 1s all ease-in;
+  opacity: 1;
+  border: #d8dbd4 solid 1px;
 }
 
 .futuro-h3 {
   grid-area: futuro-h3;
+  color: #d8dbd4;
 }
 
 .futuro-p {
@@ -116,6 +151,7 @@ nav {
   text-align: justify;
   display: flex;
   flex-wrap: wrap;
+  color: #d8dbd4;
 }
 
 .form-moto {
@@ -318,7 +354,7 @@ footer {
   border: black solid 1px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
   gap: 2px 2px;
   grid-template-areas: "contacto . ." "telefono . iconos" "email . iconos" "direccion . .";
 }
