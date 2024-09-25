@@ -352,15 +352,22 @@ nav {
 footer {
   background-color: #1c2c2f;
   border: black solid 1px;
+  padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
-  gap: 2px 2px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "contacto . ." "telefono . iconos" "email . iconos" "direccion . .";
+}
+@media (max-width: 480px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "iconos" "contacto" "telefono" "email" "direccion";
+  }
 }
 footer .contacto {
   grid-area: contacto;
-  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,14 +407,12 @@ footer .direccion {
 footer .iconos {
   grid-area: iconos;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
-  width: 300px;
 }
 footer .iconos .lista {
   list-style: none;
-  display: inline-block;
   font-size: 23px;
   border-radius: 50%;
   height: 55px;
