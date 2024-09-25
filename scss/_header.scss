@@ -1,5 +1,5 @@
 /*Estilo para el header*/
-header{
+.menu{
     padding: 10px;
     background-color: $mirage;
     border: black solid 1px;
@@ -11,6 +11,9 @@ header{
 .logoSize{
     width: 6rem;
     height: auto;
+    @media (max-width:480px){
+     width: 3rem;   
+    }
 }
 h1{
     font-size: x-small;
