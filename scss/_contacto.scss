@@ -2,85 +2,88 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     width: 100%;
     height: 100vh;
     flex-flow: column;
+    flex-wrap: wrap;
+    color: $celeste;
 }
-.form-group{
+.form-group-c{
     position: relative;
     margin: 12px 0;
     padding: 10px;
 }
-.form-comentario{
+.form-comentario-c{
     position: relative;
     margin: 12px 0;
     padding: 10px;
 }
-.form-group input {
+.form-group-c input {
     padding: 8px 10px;
     font-size: 18px;
     border-radius: 5px;
     border: black solid 2px;
     background-color: transparent;
-    color: $mirage;
+    color: $celeste;
     transition: 0.15s all ease;
 }
-.form-comentario textarea{
+.form-comentario-c textarea{
     padding: 8px 10px;
     font-size: 18px;
     border-radius: 5px;
     border: black solid 2px;
     background-color: transparent;
-    color: $mirage;
+    color: $celeste;
     transition: 0.15s all ease;
 }
-.form-group input:focus{
+.form-group-c input:focus{
     border-color: $mirage;
 }
-.form-comentario textarea:focus{
+.form-comentario-c textarea:focus{
     border-color: $mirage;
 }
-.form-group input::placeholder{
+.form-group-c input::placeholder{
     color: transparent;
 }
-.form-comentario textarea::placeholder{
+.form-comentario-c textarea::placeholder{
     color: transparent;
 }
-.form-group .form-label{
+.form-group-c .form-label-c{
     position: absolute;
     top: 19px;
     left: 0;
     font-size: 18px;
     padding: 0 20px;
-    color: $mirage;
+    color: $celeste;
     pointer-events: none;
     transition: 0.15s all ease;
 }
-.form-comentario .form-label{
+.form-comentario-c .form-label-c{
     position: absolute;
     top: 19px;
     left: 0;
     font-size: 18px;
     padding: 0 20px;
-    color: $mirage;
+    color: $celeste;
     pointer-events: none;
     transition: 0.15s all ease;
 }
-.form-group input:focus + .form-label,
-.form-group input:not(:placeholder-shown) +
-.form-label {
+.form-group-c input:focus + .form-label-c,
+.form-group-c input:not(:placeholder-shown) +
+.form-label-c {
     transform: translate(5px, -22px);
     background-color: $au-chico;
     font-size: 14px;
-    color: $mirage;
-    border-radius: 100%;
+    color: $celeste;
+    border-radius: 50px;
 }
-.form-comentario textarea:focus + .form-label,
-.form-comentario textarea:not(:placeholder-shown) +
-.form-label {
+.form-comentario-c textarea:focus + .form-label-c,
+.form-comentario-c textarea:not(:placeholder-shown) +
+.form-label-c {
     transform: translate(5px, -22px);
     background-color: $au-chico;
     font-size: 14px;
-    color: $mirage;
+    color: $celeste;
     border-radius: 100%;
 }

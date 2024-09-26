@@ -2,19 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     width: 100%;
     height: 100vh;
     flex-flow: column;
+    flex-wrap: wrap;
+    color: $celeste;
 }
 .form-group{
     position: relative;
     margin: 12px 0;
     padding: 10px;
+    color: $celeste;
 }
 .form-comentario{
     position: relative;
     margin: 12px 0;
     padding: 10px;
+    color: $celeste;
 }
 .form-group input {
     padding: 8px 10px;
@@ -22,7 +27,7 @@
     border-radius: 5px;
     border: black solid 2px;
     background-color: transparent;
-    color: $mirage;
+    color: $celeste;
     transition: 0.15s all ease;
 }
 .form-comentario textarea{
@@ -31,17 +36,17 @@
     border-radius: 5px;
     border: black solid 2px;
     background-color: transparent;
-    color: $mirage;
+    color: $celeste;
     transition: 0.15s all ease;
 }
 .form-group input:focus{
-    border-color: $mirage;
+    border-color: $celeste;
 }
 .form-comentario textarea:focus{
-    border-color: $mirage;
+    border-color: $celeste;
 }
 .form-group input::placeholder{
-    color: transparent;
+    color: transparent ;
 }
 .form-comentario textarea::placeholder{
     color: transparent;
@@ -52,7 +57,7 @@
     left: 0;
     font-size: 18px;
     padding: 0 20px;
-    color: $mirage;
+    color: $celeste;
     pointer-events: none;
     transition: 0.15s all ease;
 }
@@ -62,7 +67,7 @@
     left: 0;
     font-size: 18px;
     padding: 0 20px;
-    color: $mirage;
+    color: $celeste;
     pointer-events: none;
     transition: 0.15s all ease;
 }
@@ -72,7 +77,7 @@
     transform: translate(5px, -22px);
     background-color: $au-chico;
     font-size: 14px;
-    color: $mirage;
+    color: $celeste;
     border-radius: 100%;
 }
 .form-comentario textarea:focus + .form-label,
@@ -81,6 +86,17 @@
     transform: translate(5px, -22px);
     background-color: $au-chico;
     font-size: 14px;
-    color: $mirage;
-    border-radius: 100%;
+    color: $celeste;
+    border-radius: 50px;
+}
+.subir-foto {
+    display: none;
+}
+.subir-foto-nuevo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $roof_terracotta;
+    color: $celeste;
+    cursor: pointer;
+    border-radius: 5px;
 }
