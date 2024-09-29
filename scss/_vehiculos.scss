@@ -6,6 +6,7 @@
     padding: 10px;
     background-color: $celeste;
     border: $mirage double 2px;
+    border-radius: 0px;
     h3{
         background-color: $roof_terracotta;
         padding-left: 10px;
@@ -31,10 +32,15 @@
 @media (max-width:480px){
     .moto-articulo img{
         width: 50%;
+        border: $mirage double 2px;
+        border-radius: 5px;
     }
     .moto-articulo{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .moto-contenido{
+        border-radius: 5px;
     }
 }

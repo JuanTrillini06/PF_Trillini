@@ -188,6 +188,7 @@ nav {
   padding: 10px;
   background-color: #d8dbd4;
   border: #1c2c2f double 2px;
+  border-radius: 0px;
 }
 .moto-contenido h3 {
   background-color: #a9291c;
@@ -215,11 +216,16 @@ nav {
 @media (max-width: 480px) {
   .moto-articulo img {
     width: 50%;
+    border: #1c2c2f double 2px;
+    border-radius: 5px;
   }
   .moto-articulo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .moto-contenido {
+    border-radius: 5px;
   }
 }
 .form-moto {
