@@ -179,6 +179,49 @@ nav {
   color: #d8dbd4;
 }
 
+.artuclos {
+  display: flex;
+  flex-direction: column;
+}
+
+.moto-contenido {
+  padding: 10px;
+  background-color: #d8dbd4;
+  border: #1c2c2f double 2px;
+}
+.moto-contenido h3 {
+  background-color: #a9291c;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: #d8dbd4;
+}
+.moto-contenido p {
+  display: flex;
+  flex-wrap: wrap;
+  color: #1c2c2f;
+}
+
+.moto-articulo {
+  padding: 10px;
+  display: flex;
+}
+.moto-articulo img {
+  width: 25%;
+  border-top: #1c2c2f double 2px;
+  border-bottom: #1c2c2f double 2px;
+  border-left: #1c2c2f double 2px;
+}
+
+@media (max-width: 480px) {
+  .moto-articulo img {
+    width: 50%;
+  }
+  .moto-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .form-moto {
   display: flex;
   justify-content: center;

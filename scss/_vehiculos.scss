@@ -1,0 +1,40 @@
+.artuclos{
+    display: flex;
+    flex-direction: column;
+}
+.moto-contenido{
+    padding: 10px;
+    background-color: $celeste;
+    border: $mirage double 2px;
+    h3{
+        background-color: $roof_terracotta;
+        padding-left: 10px;
+        border-radius: 5px;
+        color: $celeste;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        color: $mirage;
+    }
+}
+.moto-articulo{
+    img{
+        width: 25%;
+        border-top: $mirage double 2px;
+        border-bottom: $mirage double 2px;
+        border-left: $mirage double 2px;
+    }
+    padding: 10px;
+    display: flex;
+}
+@media (max-width:480px){
+    .moto-articulo img{
+        width: 50%;
+    }
+    .moto-articulo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
