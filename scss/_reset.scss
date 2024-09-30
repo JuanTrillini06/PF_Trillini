@@ -1,12 +1,15 @@
+/*reseteo de formato*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*adaptar la pagina a la ventana*/
 body{
     width: 100%;
     height: 100vh;
 }
+/*definir el mismo color de fondo para todas las paginas*/
 main{
     background-color: $au_chico;
 }

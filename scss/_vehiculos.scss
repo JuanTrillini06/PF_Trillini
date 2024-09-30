@@ -1,24 +1,29 @@
+/*ordenamiento de los elementos*/
 .artuclos{
     display: flex;
     flex-direction: column;
 }
+/*ordenamiento de los contenidos titulo y texto*/
 .moto-contenido{
     padding: 10px;
     background-color: $celeste;
     border: $mirage double 2px;
     border-radius: 0px;
+    /*formato del titulo*/
     h3{
         background-color: $roof_terracotta;
         padding-left: 10px;
         border-radius: 5px;
         color: $celeste;
     }
+    /*formato del contenido*/
     p{
         display: flex;
         flex-wrap: wrap;
         color: $mirage;
     }
 }
+/*formato de las imagenes*/
 .moto-articulo{
     img{
         width: 25%;
@@ -29,6 +34,7 @@
     padding: 10px;
     display: flex;
 }
+/*adaptacion de los elementos para version movil*/
 @media (max-width:480px){
     .moto-articulo img{
         width: 50%;

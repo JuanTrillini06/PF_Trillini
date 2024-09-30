@@ -1,4 +1,5 @@
 /*Estilo de la pagina "Historia"*/
+/*ajuste de tamaños, ordenamiento de los elementos*/
 .historia {
     padding:10px;
     display: grid; 
@@ -13,6 +14,7 @@
       "futuro-img futuro-h3 futuro-h3"
       "futuro-img futuro-p futuro-p"; 
   }
+  /*ajuste de los elementos para version movil*/
   @media (max-width:480px){
     .historia{
       grid-template-columns: auto; 
@@ -30,6 +32,7 @@
       ;
     }
   }
+  /*formato, tamaño y decoracion para imagen de comienzo*/
   .comienzo-img { 
     grid-area: comienzo-img;
     width: 100%;
@@ -37,42 +40,49 @@
     opacity: 0.7;
     border: $mirage solid 1px;
 }
+/*interacion de la imagen con el puntero*/
 .comienzo-img:hover{
   border-radius: 0%;
   transition: 1s all ease-in;
   opacity: 1;
   border: $celeste solid 1px
 }
-  .comienzo-h3 {
-    grid-area: comienzo-h3;
-    color: $celeste;
+/*formato del titulo de comienzo*/
+.comienzo-h3 {
+  grid-area: comienzo-h3;
+  color: $celeste;
 }
-  .comienzo-p {
-    grid-area: comienzo-p;
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    color: $celeste;
+/*formato del texto contenido de comienzo*/
+.comienzo-p {
+  grid-area: comienzo-p;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  color: $celeste;
 }
-  .nosotros-img {
-    grid-area: nosotros-img;
-    width: 100%;
-    border-radius: 50% 5% 50% 5%;
-    opacity: 0.7;
-    border: $mirage solid 1px;
+  /*formato, tamaño y decoracion para imagen de nosotros*/
+.nosotros-img {
+  grid-area: nosotros-img;
+  width: 100%;
+  border-radius: 50% 5% 50% 5%;
+  opacity: 0.7;
+  border: $mirage solid 1px;
 }
+/*interacion de la imagen con el puntero*/
 .nosotros-img:hover{
   border-radius: 0%;
   transition: 1s all ease-in;
   opacity: 1;
   border: $celeste solid 1px
 }
+/*formato del titulo de nosotros*/
   .nosotros-h3 {
     grid-area: nosotros-h3;
     display: flex;
     justify-content: flex-end;
     color: $celeste;
 }
+/*formato del texto contenido de nosotros*/
   .nosotros-p {
     grid-area: nosotros-p;
     text-align: justify;
@@ -81,6 +91,7 @@
     flex-wrap: wrap;
     color: $celeste;
 }
+  /*formato, tamaño y decoracion para imagen de futuro*/
   .futuro-img { 
     grid-area: futuro-img;
     width: 100%;
@@ -88,16 +99,19 @@
     opacity: 0.7;
     border: $mirage solid 1px;
 }
+/*interacion de la imagen con el puntero*/
 .futuro-img:hover{
   border-radius: 0%;
   transition: 1s all ease-in;
   opacity: 1;
   border: $celeste solid 1px
 }
+/*formato del titulo de futuro*/
   .futuro-h3 {
     grid-area: futuro-h3;
     color: $celeste;
 }
+/*formato del texto contenido de futuro*/
   .futuro-p {
     grid-area: futuro-p;
     text-align: justify;

@@ -1,4 +1,5 @@
 /*Estilo del footer*/
+/*Se le da formato al footer, se reordenan los elementos y se le da colores*/
 footer{
     background-color: $mirage;
     border: black solid 1px;
@@ -11,6 +12,7 @@ footer{
       "telefono . iconos"
       "email . iconos"
       "direccion . .";
+      /*Se ordena la version movil del footer*/
     @media (max-width:480px){
             display: grid;
             grid-template-columns: auto; 
@@ -22,6 +24,7 @@ footer{
             "email"
             "direccion";
     }
+    /*Formato para el boton de contacto*/
       .contacto {
         grid-area: contacto;
         display: flex;
@@ -39,6 +42,7 @@ footer{
             color: black;
         }
     }
+    /*formato para el telefono*/
     .telefono{
         grid-area: telefono;
         display: flex;
@@ -46,6 +50,7 @@ footer{
         align-items: center;
         text-align: center;
     }
+    /*formato para el email*/
     .email {
         grid-area: email;
         display: flex;
@@ -53,6 +58,7 @@ footer{
         align-items: center;
         text-align: center;
     }
+    /*formato para la direccion*/
     .direccion {
         grid-area: direccion;
         display: flex;
@@ -60,12 +66,14 @@ footer{
         align-items: center;
         text-align: center;
     }
+    /*formato para los iconos de redes*/
     .iconos {
         grid-area: iconos;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        /*ajuste de la ubicacion de los elementos de la lista*/
         .lista{
             list-style: none;
             font-size: 23px;
@@ -84,53 +92,50 @@ footer{
             transition: 0.4s;
             transition-delay: 0.2s;
         }
+        /*formato del logo de instagram*/
         .instagram{
             border: 2px solid #ff0095;
-            color: #c72b7e;
         }
         .lista:hover .icon1{
             transform: rotateY(360deg);
-            text-shadow: 0px 0px 1px #ff0095;
         }
+        /*formato del logo de X (ex twitter)*/
         .twitter{
             border: 2px solid #1c9ff1;
-            color: #1c9ff1;
         }
         .lista:hover .icon2{
             transform: rotateY(360deg);
-            text-shadow: 0px 0px 1px #1c9ff1;
         }
+        /*formato del logo de youtube*/
         .youtube{
             border: 2px solid #ff0000;
-            color: #ff0000;
         }
         .lista:hover .icon3{
             transform: rotateY(360deg);
-            text-shadow: 0px 0px 1px #ff0000;
         }
+        /*formato del logo de facebook*/
         .facebook{
             border: 2px solid #0679e6;
-            color: #0679e6;
         }
         .lista:hover .icon4{
             transform: rotateY(360deg);
-            text-shadow: 0px 0px 1px #0679e6;
         }
+        /*formato del borde de los logos cuando se posiciona el puntero sobre ellos*/
         .instagram:hover{
-            box-shadow: 0px 0px 7px #ff0095 inset,
-                        0px 0px 7px #ff0095;
+            box-shadow: 0px 0px 10px #ff0095 inset,
+                        0px 0px 10px #ff0095;
         }
         .twitter:hover{
-            box-shadow: 0px 0px 7px #1c9ff1 inset,
-                        0px 0px 7px #1c9ff1;
+            box-shadow: 0px 0px 10px #1c9ff1 inset,
+                        0px 0px 10px #1c9ff1;
         }
         .youtube:hover{
-            box-shadow: 0px 0px 7px #ff0000 inset,
-                        0px 0px 7px #ff0000;
+            box-shadow: 0px 0px 10px #ff0000 inset,
+                        0px 0px 10px #ff0000;
         }
         .facebook:hover{
-            box-shadow: 0px 0px 7px #0679e6 inset,
-                        0px 0px 7px #0679e6;
+            box-shadow: 0px 0px 10px #0679e6 inset,
+                        0px 0px 10px #0679e6;
         }
     }
   }

@@ -1,9 +1,10 @@
 /*Estilo del index*/
+/*ajuste del tamaño del carrusel*/
 .tamaño-carrusel{
     padding: 10px;
     width: 50%;
 }
-
+/*ajuste del main para version movil*/
 @media (max-width:480px){
     .tamaño-carrusel{
         width: 100%;
@@ -15,12 +16,13 @@
         font-size: x-small;
     }
 }
-
+/*formato del texto dentro del carrusel*/
 .fondo{
     background-color: $au-chico;
     opacity: 0.4;
     border-radius: 20px;
 }
+/*formato del texto dentro del carrusel cuando el puntero lo indica*/
 .fondo:hover{
     transition: 0.2s all;
     background-color: $roof_terracotta;

@@ -1,3 +1,4 @@
+/*ordenamiento de los elementos del formulario*/
 .form-moto{
     display: flex;
     justify-content: center;
@@ -9,18 +10,21 @@
     flex-wrap: wrap;
     color: $celeste;
 }
+/*formato de los contenedores del formulario*/
 .form-group{
     position: relative;
     margin: 12px 0;
     padding: 10px;
     color: $celeste;
 }
+/*formato del contenedor de comentario del formulario*/
 .form-comentario{
     position: relative;
     margin: 12px 0;
     padding: 10px;
     color: $celeste;
 }
+/*formato del area de escritura del formulario*/
 .form-group input {
     padding: 8px 10px;
     font-size: 18px;
@@ -30,6 +34,7 @@
     color: $celeste;
     transition: 0.15s all ease;
 }
+/*formato del area de escritura de comentarios del formulario*/
 .form-comentario textarea{
     padding: 8px 10px;
     font-size: 18px;
@@ -39,18 +44,23 @@
     color: $celeste;
     transition: 0.15s all ease;
 }
+/*formato del borde cuando se quiere ecribir en el formulario*/
 .form-group input:focus{
     border-color: $celeste;
 }
+/*formato del borde cuando se quiere ecribir en comentario del formulario*/
 .form-comentario textarea:focus{
     border-color: $celeste;
 }
+/*formato del fondo del texto del formulario*/
 .form-group input::placeholder{
     color: transparent ;
 }
+/*formato del fondo del texto de comentario del formulario*/
 .form-comentario textarea::placeholder{
     color: transparent;
 }
+/*formato del texto alternativo del fomrulario*/
 .form-group .form-label{
     position: absolute;
     top: 19px;
@@ -61,6 +71,7 @@
     pointer-events: none;
     transition: 0.15s all ease;
 }
+/*formato del texto alternativo de formulario*/
 .form-comentario .form-label{
     position: absolute;
     top: 19px;
@@ -71,6 +82,7 @@
     pointer-events: none;
     transition: 0.15s all ease;
 }
+/*accion que realiza el texto descriptivo al clickear para escribir en el formulario*/
 .form-group input:focus + .form-label,
 .form-group input:not(:placeholder-shown) +
 .form-label {
@@ -80,6 +92,7 @@
     color: $celeste;
     border-radius: 100%;
 }
+/*accion que realiza el texto descriptivo al clickear para escribir en contacto*/
 .form-comentario textarea:focus + .form-label,
 .form-comentario textarea:not(:placeholder-shown) +
 .form-label {
@@ -89,9 +102,12 @@
     color: $celeste;
     border-radius: 50px;
 }
+/*formato del boton de subir foto*/
+/*se oculta el boton original*/
 .subir-foto {
     display: none;
 }
+/*posicionamiento y formato del 'falso' boton*/
 .subir-foto-nuevo {
     display: inline-block;
     padding: 10px 20px;
@@ -100,9 +116,12 @@
     cursor: pointer;
     border-radius: 5px;
 }
+/*formato del boton de enviar*/
+/*se oculta el boton original*/
 .boton-enviar {
     display: none;
 }
+/*posicionamiento y formato del 'falso' boton*/
 .boton-enviar-nuevo {
     display: inline-block;
     padding: 10px 20px;
@@ -111,6 +130,7 @@
     cursor: pointer;
     border-radius: 5px;
 }
+/*accion que realiza el boton cuando se coloca el puntero arriba*/
 .boton-enviar-nuevo:hover{
     background-color: aquamarine;
     color: $mirage;

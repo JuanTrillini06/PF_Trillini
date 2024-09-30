@@ -1,3 +1,4 @@
+/*ordenamiento de los elementos del formulario*/
 .form-contact{
     display: flex;
     justify-content: center;
@@ -9,16 +10,19 @@
     flex-wrap: wrap;
     color: $celeste;
 }
+/*formato de los contenedores del formulario*/
 .form-group-c{
     position: relative;
     margin: 12px 0;
     padding: 10px;
 }
+/*formato del contenedor de comentario del formulario*/
 .form-comentario-c{
     position: relative;
     margin: 12px 0;
     padding: 10px;
 }
+/*formato del area de escritura del formulario*/
 .form-group-c input {
     padding: 8px 10px;
     font-size: 18px;
@@ -28,6 +32,7 @@
     color: $celeste;
     transition: 0.15s all ease;
 }
+/*formato del area de escritura de comentarios del formulario*/
 .form-comentario-c textarea{
     padding: 8px 10px;
     font-size: 18px;
@@ -37,18 +42,23 @@
     color: $celeste;
     transition: 0.15s all ease;
 }
+/*formato del borde cuando se quiere ecribir en el formulario*/
 .form-group-c input:focus{
     border-color: $mirage;
 }
+/*formato del borde cuando se quiere ecribir en comentario del formulario*/
 .form-comentario-c textarea:focus{
     border-color: $mirage;
 }
+/*formato del fondo del texto del formulario*/
 .form-group-c input::placeholder{
     color: transparent;
 }
+/*formato del fondo del texto de comentario del formulario*/
 .form-comentario-c textarea::placeholder{
     color: transparent;
 }
+/*formato del texto alternativo del fomrulario*/
 .form-group-c .form-label-c{
     position: absolute;
     top: 19px;
@@ -59,6 +69,7 @@
     pointer-events: none;
     transition: 0.15s all ease;
 }
+/*formato del texto alternativo de formulario*/
 .form-comentario-c .form-label-c{
     position: absolute;
     top: 19px;
@@ -69,6 +80,7 @@
     pointer-events: none;
     transition: 0.15s all ease;
 }
+/*accion que realiza el texto descriptivo al clickear para escribir en el formulario*/
 .form-group-c input:focus + .form-label-c,
 .form-group-c input:not(:placeholder-shown) +
 .form-label-c {
@@ -78,6 +90,7 @@
     color: $celeste;
     border-radius: 50px;
 }
+/*accion que realiza el texto descriptivo al clickear para escribir en contacto*/
 .form-comentario-c textarea:focus + .form-label-c,
 .form-comentario-c textarea:not(:placeholder-shown) +
 .form-label-c {
@@ -87,9 +100,12 @@
     color: $celeste;
     border-radius: 100%;
 }
+/*formato del boton de enviar*/
+/*se oculta el boton original*/
 .contacto-enviar {
     display: none;
 }
+/*posicionamiento y formato del 'falso' boton*/
 .contacto-enviar-nuevo {
     display: inline-block;
     padding: 10px 20px;
@@ -98,6 +114,7 @@
     cursor: pointer;
     border-radius: 5px;
 }
+/*accion que realiza el boton cuando se coloca el puntero arriba*/
 .contacto-enviar-nuevo:hover{
     background-color: aquamarine;
     color: $mirage;
