@@ -343,6 +343,26 @@ nav {
   border-radius: 5px;
 }
 
+.boton-enviar {
+  display: none;
+}
+
+.boton-enviar-nuevo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a9291c;
+  color: #d8dbd4;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-enviar-nuevo:hover {
+  background-color: aquamarine;
+  color: #1c2c2f;
+  transform: rotateX(360deg);
+  transition: 1s all ease-in-out;
+}
+
 .form-contact {
   display: flex;
   justify-content: center;
@@ -441,6 +461,26 @@ nav {
   font-size: 14px;
   color: #d8dbd4;
   border-radius: 100%;
+}
+
+.contacto-enviar {
+  display: none;
+}
+
+.contacto-enviar-nuevo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a9291c;
+  color: #d8dbd4;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contacto-enviar-nuevo:hover {
+  background-color: aquamarine;
+  color: #1c2c2f;
+  transform: rotateX(360deg);
+  transition: 1s all ease-in-out;
 }
 
 /*Estilo del footer*/

@@ -87,3 +87,20 @@
     color: $celeste;
     border-radius: 100%;
 }
+.contacto-enviar {
+    display: none;
+}
+.contacto-enviar-nuevo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $roof_terracotta;
+    color: $celeste;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contacto-enviar-nuevo:hover{
+    background-color: aquamarine;
+    color: $mirage;
+    transform: rotateX(360deg);
+    transition: 1s all ease-in-out;
+}

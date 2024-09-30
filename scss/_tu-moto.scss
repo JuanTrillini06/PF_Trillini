@@ -100,3 +100,20 @@
     cursor: pointer;
     border-radius: 5px;
 }
+.boton-enviar {
+    display: none;
+}
+.boton-enviar-nuevo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $roof_terracotta;
+    color: $celeste;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.boton-enviar-nuevo:hover{
+    background-color: aquamarine;
+    color: $mirage;
+    transform: rotateX(360deg);
+    transition: 1s all ease-in-out;
+}
