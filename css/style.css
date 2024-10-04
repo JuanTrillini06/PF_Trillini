@@ -1,20 +1,28 @@
 @charset "UTF-8";
+/*importacion de variables*/
+/*definicion de colores*/
+/*importacion del reseteo de pagina*/
+/*reseteo de formato*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*adaptar la pagina a la ventana*/
 body {
   width: 100%;
   height: 100vh;
 }
 
+/*definir el mismo color de fondo para todas las paginas*/
 main {
   background-color: #8e5f55;
 }
 
+/*importacion del formato visual del header*/
 /*Estilo para el header*/
+/*Se ajustan los componentes del header, se le da formato y color*/
 .menu {
   padding: 10px;
   background-color: #1c2c2f;
@@ -25,6 +33,7 @@ main {
   align-items: center;
 }
 
+/*Se ajusta el logo y se lo configura para la version movil*/
 .logoSize {
   width: 6rem;
   height: auto;
@@ -45,12 +54,15 @@ nav {
   border-radius: 50% 5% 50% 5%;
 }
 
+/*importacion del formato visual de la pestaña index*/
 /*Estilo del index*/
+/*ajuste del tamaño del carrusel*/
 .tamaño-carrusel {
   padding: 10px;
   width: 50%;
 }
 
+/*ajuste del main para version movil*/
 @media (max-width: 480px) {
   .tamaño-carrusel {
     width: 100%;
@@ -62,12 +74,14 @@ nav {
     font-size: x-small;
   }
 }
+/*formato del texto dentro del carrusel*/
 .fondo {
   background-color: #8e5f55;
   opacity: 0.4;
   border-radius: 20px;
 }
 
+/*formato del texto dentro del carrusel cuando el puntero lo indica*/
 .fondo:hover {
   transition: 0.2s all;
   background-color: #a9291c;
@@ -75,16 +89,19 @@ nav {
   color: #d8dbd4;
 }
 
+/*importacion del formato visual de la pestaña historia*/
 /*Estilo de la pagina "Historia"*/
+/*ajuste de tamaños, ordenamiento de los elementos*/
 .historia {
   padding: 10px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 0.25fr 1.75fr 0.25fr 1.75fr 0.25fr 1.75fr;
-  gap: 0px 5px;
+  column-gap: 20px;
   grid-template-areas: "comienzo-img comienzo-h3 comienzo-h3" "comienzo-img comienzo-p comienzo-p" "nosotros-h3 nosotros-h3 nosotros-img" "nosotros-p nosotros-p nosotros-img" "futuro-img futuro-h3 futuro-h3" "futuro-img futuro-p futuro-p";
 }
 
+/*ajuste de los elementos para version movil*/
 @media (max-width: 480px) {
   .historia {
     grid-template-columns: auto;
@@ -92,6 +109,13 @@ nav {
     grid-template-areas: "comienzo-img" "comienzo-h3" "comienzo-p" "nosotros-img" "nosotros-h3" "nosotros-p" "futuro-img" "futuro-h3" "futuro-p";
   }
 }
+@media (min-width: 1260px) {
+  .historia {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/*formato, tamaño y decoracion para imagen de comienzo*/
 .comienzo-img {
   grid-area: comienzo-img;
   width: 100%;
@@ -100,6 +124,7 @@ nav {
   border: #1c2c2f solid 1px;
 }
 
+/*interacion de la imagen con el puntero*/
 .comienzo-img:hover {
   border-radius: 0%;
   transition: 1s all ease-in;
@@ -107,11 +132,13 @@ nav {
   border: #d8dbd4 solid 1px;
 }
 
+/*formato del titulo de comienzo*/
 .comienzo-h3 {
   grid-area: comienzo-h3;
   color: #d8dbd4;
 }
 
+/*formato del texto contenido de comienzo*/
 .comienzo-p {
   grid-area: comienzo-p;
   text-align: justify;
@@ -120,6 +147,7 @@ nav {
   color: #d8dbd4;
 }
 
+/*formato, tamaño y decoracion para imagen de nosotros*/
 .nosotros-img {
   grid-area: nosotros-img;
   width: 100%;
@@ -128,6 +156,7 @@ nav {
   border: #1c2c2f solid 1px;
 }
 
+/*interacion de la imagen con el puntero*/
 .nosotros-img:hover {
   border-radius: 0%;
   transition: 1s all ease-in;
@@ -135,6 +164,7 @@ nav {
   border: #d8dbd4 solid 1px;
 }
 
+/*formato del titulo de nosotros*/
 .nosotros-h3 {
   grid-area: nosotros-h3;
   display: flex;
@@ -142,6 +172,7 @@ nav {
   color: #d8dbd4;
 }
 
+/*formato del texto contenido de nosotros*/
 .nosotros-p {
   grid-area: nosotros-p;
   text-align: justify;
@@ -151,6 +182,7 @@ nav {
   color: #d8dbd4;
 }
 
+/*formato, tamaño y decoracion para imagen de futuro*/
 .futuro-img {
   grid-area: futuro-img;
   width: 100%;
@@ -159,6 +191,7 @@ nav {
   border: #1c2c2f solid 1px;
 }
 
+/*interacion de la imagen con el puntero*/
 .futuro-img:hover {
   border-radius: 0%;
   transition: 1s all ease-in;
@@ -166,11 +199,13 @@ nav {
   border: #d8dbd4 solid 1px;
 }
 
+/*formato del titulo de futuro*/
 .futuro-h3 {
   grid-area: futuro-h3;
   color: #d8dbd4;
 }
 
+/*formato del texto contenido de futuro*/
 .futuro-p {
   grid-area: futuro-p;
   text-align: justify;
@@ -179,16 +214,21 @@ nav {
   color: #d8dbd4;
 }
 
+/*importacion del formato visual de la pestaña vehiculos*/
+/*ordenamiento de los elementos*/
 .artuclos {
   display: flex;
   flex-direction: column;
 }
 
+/*ordenamiento de los contenidos titulo y texto*/
 .moto-contenido {
   padding: 10px;
   background-color: #d8dbd4;
   border: #1c2c2f double 2px;
   border-radius: 0px;
+  /*formato del titulo*/
+  /*formato del contenido*/
 }
 .moto-contenido h3 {
   background-color: #a9291c;
@@ -202,6 +242,7 @@ nav {
   color: #1c2c2f;
 }
 
+/*formato de las imagenes*/
 .moto-articulo {
   padding: 10px;
   display: flex;
@@ -213,7 +254,8 @@ nav {
   border-left: #1c2c2f double 2px;
 }
 
-@media (max-width: 480px) {
+/*adaptacion de los elementos para version movil*/
+@media (max-width: 1080px) {
   .moto-articulo img {
     width: 50%;
     border: #1c2c2f double 2px;
@@ -228,6 +270,8 @@ nav {
     border-radius: 5px;
   }
 }
+/*importacion del formato visual de la pestaña tu-moto*/
+/*ordenamiento de los elementos del formulario*/
 .form-moto {
   display: flex;
   justify-content: center;
@@ -240,6 +284,7 @@ nav {
   color: #d8dbd4;
 }
 
+/*formato de los contenedores del formulario*/
 .form-group {
   position: relative;
   margin: 12px 0;
@@ -247,13 +292,7 @@ nav {
   color: #d8dbd4;
 }
 
-.form-comentario {
-  position: relative;
-  margin: 12px 0;
-  padding: 10px;
-  color: #d8dbd4;
-}
-
+/*formato del area de escritura del formulario*/
 .form-group input {
   padding: 8px 10px;
   font-size: 18px;
@@ -264,32 +303,17 @@ nav {
   transition: 0.15s all ease;
 }
 
-.form-comentario textarea {
-  padding: 8px 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  border: black solid 2px;
-  background-color: transparent;
-  color: #d8dbd4;
-  transition: 0.15s all ease;
-}
-
+/*formato del borde cuando se quiere ecribir en el formulario*/
 .form-group input:focus {
   border-color: #d8dbd4;
 }
 
-.form-comentario textarea:focus {
-  border-color: #d8dbd4;
-}
-
+/*formato del fondo del texto del formulario*/
 .form-group input::placeholder {
   color: transparent;
 }
 
-.form-comentario textarea::placeholder {
-  color: transparent;
-}
-
+/*formato del texto alternativo del fomrulario*/
 .form-group .form-label {
   position: absolute;
   top: 19px;
@@ -301,17 +325,7 @@ nav {
   transition: 0.15s all ease;
 }
 
-.form-comentario .form-label {
-  position: absolute;
-  top: 19px;
-  left: 0;
-  font-size: 18px;
-  padding: 0 20px;
-  color: #d8dbd4;
-  pointer-events: none;
-  transition: 0.15s all ease;
-}
-
+/*accion que realiza el texto descriptivo al clickear para escribir en el formulario*/
 .form-group input:focus + .form-label,
 .form-group input:not(:placeholder-shown) + .form-label {
   transform: translate(5px, -22px);
@@ -321,20 +335,14 @@ nav {
   border-radius: 100%;
 }
 
-.form-comentario textarea:focus + .form-label,
-.form-comentario textarea:not(:placeholder-shown) + .form-label {
-  transform: translate(5px, -22px);
-  background-color: #8e5f55;
-  font-size: 14px;
-  color: #d8dbd4;
-  border-radius: 50px;
-}
-
+/*formato del boton de subir foto*/
+/*se oculta el boton original*/
 .subir-foto {
   display: none;
 }
 
-.subir-foto-nuevo {
+/*posicionamiento y formato del 'falso' boton*/
+.formato-boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: #a9291c;
@@ -343,19 +351,13 @@ nav {
   border-radius: 5px;
 }
 
+/*formato del boton de enviar*/
+/*se oculta el boton original*/
 .boton-enviar {
   display: none;
 }
 
-.boton-enviar-nuevo {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #a9291c;
-  color: #d8dbd4;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
+/*accion que realiza el boton cuando se coloca el puntero arriba*/
 .boton-enviar-nuevo:hover {
   background-color: aquamarine;
   color: #1c2c2f;
@@ -363,6 +365,15 @@ nav {
   transition: 1s all ease-in-out;
 }
 
+/*Formato para la seccion de continente*/
+.form-desplegable {
+  display: flex;
+  flex-direction: column;
+  color: #d8dbd4;
+}
+
+/*importacion del formato visual de la pestaña contacto*/
+/*ordenamiento de los elementos del formulario*/
 .form-contact {
   display: flex;
   justify-content: center;
@@ -375,18 +386,21 @@ nav {
   color: #d8dbd4;
 }
 
+/*formato de los contenedores del formulario*/
 .form-group-c {
   position: relative;
   margin: 12px 0;
   padding: 10px;
 }
 
+/*formato del contenedor de comentario del formulario*/
 .form-comentario-c {
   position: relative;
   margin: 12px 0;
   padding: 10px;
 }
 
+/*formato del area de escritura del formulario*/
 .form-group-c input {
   padding: 8px 10px;
   font-size: 18px;
@@ -397,6 +411,7 @@ nav {
   transition: 0.15s all ease;
 }
 
+/*formato del area de escritura de comentarios del formulario*/
 .form-comentario-c textarea {
   padding: 8px 10px;
   font-size: 18px;
@@ -407,22 +422,27 @@ nav {
   transition: 0.15s all ease;
 }
 
+/*formato del borde cuando se quiere ecribir en el formulario*/
 .form-group-c input:focus {
   border-color: #1c2c2f;
 }
 
+/*formato del borde cuando se quiere ecribir en comentario del formulario*/
 .form-comentario-c textarea:focus {
   border-color: #1c2c2f;
 }
 
+/*formato del fondo del texto del formulario*/
 .form-group-c input::placeholder {
   color: transparent;
 }
 
+/*formato del fondo del texto de comentario del formulario*/
 .form-comentario-c textarea::placeholder {
   color: transparent;
 }
 
+/*formato del texto alternativo del fomrulario*/
 .form-group-c .form-label-c {
   position: absolute;
   top: 19px;
@@ -434,6 +454,7 @@ nav {
   transition: 0.15s all ease;
 }
 
+/*formato del texto alternativo de formulario*/
 .form-comentario-c .form-label-c {
   position: absolute;
   top: 19px;
@@ -445,6 +466,7 @@ nav {
   transition: 0.15s all ease;
 }
 
+/*accion que realiza el texto descriptivo al clickear para escribir en el formulario*/
 .form-group-c input:focus + .form-label-c,
 .form-group-c input:not(:placeholder-shown) + .form-label-c {
   transform: translate(5px, -22px);
@@ -454,6 +476,7 @@ nav {
   border-radius: 50px;
 }
 
+/*accion que realiza el texto descriptivo al clickear para escribir en contacto*/
 .form-comentario-c textarea:focus + .form-label-c,
 .form-comentario-c textarea:not(:placeholder-shown) + .form-label-c {
   transform: translate(5px, -22px);
@@ -463,10 +486,13 @@ nav {
   border-radius: 100%;
 }
 
+/*formato del boton de enviar*/
+/*se oculta el boton original*/
 .contacto-enviar {
   display: none;
 }
 
+/*posicionamiento y formato del 'falso' boton*/
 .contacto-enviar-nuevo {
   display: inline-block;
   padding: 10px 20px;
@@ -476,6 +502,7 @@ nav {
   border-radius: 5px;
 }
 
+/*accion que realiza el boton cuando se coloca el puntero arriba*/
 .contacto-enviar-nuevo:hover {
   background-color: aquamarine;
   color: #1c2c2f;
@@ -483,7 +510,9 @@ nav {
   transition: 1s all ease-in-out;
 }
 
+/*importacion del formato visual del footer*/
 /*Estilo del footer*/
+/*Se le da formato al footer, se reordenan los elementos y se le da colores*/
 footer {
   background-color: #1c2c2f;
   border: black solid 1px;
@@ -492,6 +521,12 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "contacto . ." "telefono . iconos" "email . iconos" "direccion . .";
+  /*Se ordena la version movil del footer*/
+  /*Formato para el boton de contacto*/
+  /*formato para el telefono*/
+  /*formato para el email*/
+  /*formato para la direccion*/
+  /*formato para los iconos de redes*/
 }
 @media (max-width: 480px) {
   footer {
@@ -545,6 +580,12 @@ footer .iconos {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  /*ajuste de la ubicacion de los elementos de la lista*/
+  /*formato del logo de instagram*/
+  /*formato del logo de X (ex twitter)*/
+  /*formato del logo de youtube*/
+  /*formato del logo de facebook*/
+  /*formato del borde de los logos cuando se posiciona el puntero sobre ellos*/
 }
 footer .iconos .lista {
   list-style: none;
@@ -566,47 +607,39 @@ footer .iconos .lista {
 }
 footer .iconos .instagram {
   border: 2px solid #ff0095;
-  color: #c72b7e;
 }
 footer .iconos .lista:hover .icon1 {
   transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #ff0095;
 }
 footer .iconos .twitter {
   border: 2px solid #1c9ff1;
-  color: #1c9ff1;
 }
 footer .iconos .lista:hover .icon2 {
   transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #1c9ff1;
 }
 footer .iconos .youtube {
   border: 2px solid #ff0000;
-  color: #ff0000;
 }
 footer .iconos .lista:hover .icon3 {
   transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #ff0000;
 }
 footer .iconos .facebook {
   border: 2px solid #0679e6;
-  color: #0679e6;
 }
 footer .iconos .lista:hover .icon4 {
   transform: rotateY(360deg);
-  text-shadow: 0px 0px 1px #0679e6;
 }
 footer .iconos .instagram:hover {
-  box-shadow: 0px 0px 7px #ff0095 inset, 0px 0px 7px #ff0095;
+  box-shadow: 0px 0px 10px #ff0095 inset, 0px 0px 10px #ff0095;
 }
 footer .iconos .twitter:hover {
-  box-shadow: 0px 0px 7px #1c9ff1 inset, 0px 0px 7px #1c9ff1;
+  box-shadow: 0px 0px 10px #1c9ff1 inset, 0px 0px 10px #1c9ff1;
 }
 footer .iconos .youtube:hover {
-  box-shadow: 0px 0px 7px #ff0000 inset, 0px 0px 7px #ff0000;
+  box-shadow: 0px 0px 10px #ff0000 inset, 0px 0px 10px #ff0000;
 }
 footer .iconos .facebook:hover {
-  box-shadow: 0px 0px 7px #0679e6 inset, 0px 0px 7px #0679e6;
+  box-shadow: 0px 0px 10px #0679e6 inset, 0px 0px 10px #0679e6;
 }
 
 /*# sourceMappingURL=style.css.map */

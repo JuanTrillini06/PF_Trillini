@@ -35,7 +35,7 @@
     display: flex;
 }
 /*adaptacion de los elementos para version movil*/
-@media (max-width:480px){
+@media (max-width:1080px){
     .moto-articulo img{
         width: 50%;
         border: $mirage double 2px;

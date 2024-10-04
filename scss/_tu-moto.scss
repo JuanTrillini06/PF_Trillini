@@ -17,25 +17,8 @@
     padding: 10px;
     color: $celeste;
 }
-/*formato del contenedor de comentario del formulario*/
-.form-comentario{
-    position: relative;
-    margin: 12px 0;
-    padding: 10px;
-    color: $celeste;
-}
 /*formato del area de escritura del formulario*/
 .form-group input {
-    padding: 8px 10px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: black solid 2px;
-    background-color: transparent;
-    color: $celeste;
-    transition: 0.15s all ease;
-}
-/*formato del area de escritura de comentarios del formulario*/
-.form-comentario textarea{
     padding: 8px 10px;
     font-size: 18px;
     border-radius: 5px;
@@ -48,31 +31,12 @@
 .form-group input:focus{
     border-color: $celeste;
 }
-/*formato del borde cuando se quiere ecribir en comentario del formulario*/
-.form-comentario textarea:focus{
-    border-color: $celeste;
-}
 /*formato del fondo del texto del formulario*/
 .form-group input::placeholder{
     color: transparent ;
 }
-/*formato del fondo del texto de comentario del formulario*/
-.form-comentario textarea::placeholder{
-    color: transparent;
-}
 /*formato del texto alternativo del fomrulario*/
 .form-group .form-label{
-    position: absolute;
-    top: 19px;
-    left: 0;
-    font-size: 18px;
-    padding: 0 20px;
-    color: $celeste;
-    pointer-events: none;
-    transition: 0.15s all ease;
-}
-/*formato del texto alternativo de formulario*/
-.form-comentario .form-label{
     position: absolute;
     top: 19px;
     left: 0;
@@ -92,23 +56,13 @@
     color: $celeste;
     border-radius: 100%;
 }
-/*accion que realiza el texto descriptivo al clickear para escribir en contacto*/
-.form-comentario textarea:focus + .form-label,
-.form-comentario textarea:not(:placeholder-shown) +
-.form-label {
-    transform: translate(5px, -22px);
-    background-color: $au-chico;
-    font-size: 14px;
-    color: $celeste;
-    border-radius: 50px;
-}
 /*formato del boton de subir foto*/
 /*se oculta el boton original*/
 .subir-foto {
     display: none;
 }
 /*posicionamiento y formato del 'falso' boton*/
-.subir-foto-nuevo {
+.formato-boton {
     display: inline-block;
     padding: 10px 20px;
     background-color: $roof_terracotta;
@@ -121,19 +75,17 @@
 .boton-enviar {
     display: none;
 }
-/*posicionamiento y formato del 'falso' boton*/
-.boton-enviar-nuevo {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: $roof_terracotta;
-    color: $celeste;
-    cursor: pointer;
-    border-radius: 5px;
-}
+
 /*accion que realiza el boton cuando se coloca el puntero arriba*/
 .boton-enviar-nuevo:hover{
     background-color: aquamarine;
     color: $mirage;
     transform: rotateX(360deg);
     transition: 1s all ease-in-out;
+}
+/*Formato para la seccion de continente*/
+.form-desplegable{
+    display: flex;
+    flex-direction: column;
+    color: $celeste;
 }

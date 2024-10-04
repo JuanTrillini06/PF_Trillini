@@ -61,19 +61,45 @@
               <label class="form-label">E-mail</label> 
             </div>
             <!--bloque de subir foto-->
-            <div>
-              <label for="subir foto" class="subir-foto-nuevo">Subir foto</label> 
+            <div class="form-group">
+              <label for="subir foto" class="formato-boton">Subir foto</label> 
               <input id="subir foto" class="subir-foto" type="file">
             </div>
-            <!--bloque de comentario-->
-            <div class="form-comentario">
-              <textarea rows="6" cols="30" maxlength="500" style="resize:vertical;" placeholder="Contanos"></textarea>
-              <label class="form-label">Contanos</label>
+            <!--bloque de continente-->
+            <div class="form-group form-desplegable">
+              <label for="continent">Continente de origen de la moto:</label>
+              <select class="formato-boton" id="continent" name="continent">
+                <option value="none">--Selecciona una opcion--</option>
+                <option value="africa">África</option>
+                <option value="north-america">América del Norte</option>
+                <option value="south-america">América del Sur</option>
+                <option value="antarctica">Antártida</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europa</option>
+                <option value="oceania">Oceanía</option>
+              </select>
+            </div>
+            <!--bloque de marca de moto-->
+            <div class="form-group form-desplegable">
+              <label for="marca">Cual es la marca de tu moto:</label>
+              <select class="formato-boton" id="marca" name="marca">
+                  <option value="honda">--Selecciona una opcion--</option>
+                  <option value="honda">Honda</option>
+                  <option value="yamaha">Yamaha</option>
+                  <option value="suzuki">Suzuki</option>
+                  <option value="kawasaki">Kawasaki</option>
+                  <option value="bmw">BMW</option>
+                  <option value="harley-davidson">Harley-Davidson</option>
+                  <option value="ducati">Ducati</option>
+                  <option value="ktm">KTM</option>
+                  <option value="triumph">Triumph</option>
+                  <option value="aprilia">Aprilia</option>
+              </select>
             </div>
             <!--boton de envio-->
-            <div>
+            <div class="form-group">
                 <input class="boton-enviar" id="enviar" type="submit" value="enviar">
-                <label class="boton-enviar-nuevo" for="enviar">Enviar</label>
+                <label class="formato-boton boton-enviar-nuevo" for="enviar">Enviar</label>
             </div>
         </fieldset>
     </form>

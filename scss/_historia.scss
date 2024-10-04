@@ -5,7 +5,7 @@
     display: grid; 
     grid-template-columns: auto auto auto; 
     grid-template-rows: 0.25fr 1.75fr 0.25fr 1.75fr 0.25fr 1.75fr; 
-    gap: 0px 5px; 
+    column-gap: 20px;
     grid-template-areas: 
       "comienzo-img comienzo-h3 comienzo-h3"
       "comienzo-img comienzo-p comienzo-p"
@@ -30,6 +30,13 @@
       "futuro-h3"
       "futuro-p"
       ;
+    }
+  }
+  @media (min-width:1260px){
+    .historia{
+      padding-left: 50px;
+      padding-right: 50px;
+      
     }
   }
   /*formato, tamaño y decoracion para imagen de comienzo*/
